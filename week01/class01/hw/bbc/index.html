@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- code by Patrick Skolsky (cavi) -->
 
 <html lang="en">
 
@@ -19,16 +20,37 @@
   <nav>
     <ul>
       <li>bbc icon</li>
-      <li>sign in</li>
-      <li>Home</li>
-      <li>News</li>
-      <li>Sport</li>
-      <li>Reel</li>
-      <li>WOrklife</li>
-      <li>Travel</li>
-      <li>Future</li>
-      <li>Culture</li>
-      <li>More (dropdown)</li>
+
+      <a href="#">
+        <li>sign in</li>
+      </a>
+      <a href="#home">
+        <li>Home</li>
+      </a>
+      <a href="#news">
+        <li>News</li>
+      </a>
+      <a href="#sports">
+        <li>Sport</li>
+      </a>
+      <a href="#">
+        <li>Reel</li>
+      </a>
+      <a href="#">
+        <li>WOrklife</li>
+      </a>
+      <a href="#">
+        <li>Travel</li>
+      </a>
+      <a href="#">
+        <li>Future</li>
+      </a>
+      <a href="#">
+        <li>Culture</li>
+      </a>
+      <a href="#">
+        <li>More (dropdown)</li>
+      </a>
 
       <li>
         <input type="search" id="site-search" name="q" aria-label="Search through site content">
@@ -41,64 +63,108 @@
   <!-- HEADER -->
   <header id="greeting">
 
-    <h1 id="welcome">Welcome to BBC.com</h1>
+    <h2 id="welcome">Welcome to BBC.com</h2>
 
     <span id="date">Thursday, 13 August</span>
 
   </header>
 
-  <!-- TOP  -->
+  <!-- MAIN DAILY NEWS AND CONTENT  -->
   <section id="main">
 
-    <div id="card-1">
+    <section id="top-news">
+      <!-- BIG PICTURE ARTICLE  -->
 
-
-      <a href="https://placeholder.com">
+      <a href="#">
         <img src="https://via.placeholder.com/500x350" alt="Isreal and UAE strike history peace deal">
-        <h1> Israel and UAE strike historic peace deal. <h1>
+        <h1> Israel and UAE strike historic peace deal. </h1>
             <p>Isreal and the UAE agree to normalise relations, marking the third Israel-Arab peace deal.</p>
-            <span id="category-tag"> MIDDLE EAST </span>
+            <span id="category-tag">MIDDLE EAST</span>
       </a>
-    </div>
+    </section>
 
-    <div id="card-4">
+    <section id="top-quad">
+      <!-- CONTAINER FOR FOUR SMALL CARDS  -->
 
-    </div>
+      <section class="content-quad">
+        <a href="#">
+          <img src="#insert image" alt="#insert article headline">
+          <h3>Americans go home: Tension at Canade-US border</h3>
+          <span class="category-tag">CANADA</span>
+        </a>
+      </section>
+
+      <section class="content-quad">
+        <a href="#">
+          <img src="#insert image" alt="#insert article headlinet">
+          <h3>How will the world vaccinate seven billion people?</h3>
+          <span class="category-tag">HEALTH</span>
+        </a>
+      </section>
+
+      <section class="content-quad">
+        <a href="#">
+          <img src="#insert image" alt="#insert article headline">
+          <h3>The online 'productivity gyms'</h3>
+          <span class="category-tag">WORKLIFE</span>
+        </a>
+      </section>
+
+      <section class="content-quad">
+        <a href="#">
+          <img src="#insert image" alt="#insert article headline">
+          <h3>The folk singer murdered for his music</h3>
+          <span class="category-tag">CULTURE</span>
+        </a>
+      </section>
+
+    </section>
 
 
   </section>
 
-  <!-- BOTTOM  -->
-  <section id="news">
+  <!-- CATEGORY CONTENT  -->
+  <section id="category-news">
+    <!-- Each category section displays 3 top content items  -->
 
-    <h2>News</h2>
+    <a href="#News">
+      <h2>News</h2>
+    </a>
 
-    <div class="news-card">
+    <section class="category-card">
+      <a href="#">
+        <img src="placeholder.jpg" alt="#fill in headline">
+        <h3>Biden and Haris say Trump has left US 'in tatters'</h3>
+        <p>Joe Biden and running mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</p>
+      </a>
 
-      <img src="placeholder.jpg">
+      <a href="#">
+        <span class="category-tag">US ELECTION 2020</span>
+      </a>
+    </section>
 
-      <h3>Biden and Haris</h3>
+    <section class="category-card">
+      <a href="#">
+        <img src="placeholder.jpg" alt="#fill in headline">
+        <h3>Women form 'solidarity chains' in Belarus protests</h3>
+        <p>Women take to the streets of Minsk dressed in white as they demand an end to police brutality.</p>
+      </a>
 
-      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, similique unde sunt optio quas magnam
-        numquam. Amet reprehenderit aliquid ipsam, odit sit provident impedit. Beatae sequi quidem laborum deleniti
-        blanditiis.</p>
-    </div>
+      <a href="#">
+        <span class="category-tag">EUROPE</span>
+      </a>
+    </section>
 
-    <div class="news-card">
-      <img src="placeholder.jpg">
-      <h3>Women form 'solidarity chains' in Belarus protests</h3>
-      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, similique unde sunt optio quas magnam
-        numquam. Amet reprehenderit aliquid ipsam, odit sit provident impedit. Beatae sequi quidem laborum deleniti
-        blanditiis.</p>
-    </div>
+    <section class="category-card">
+      <a href="#"><img src="placeholder.jpg" alt="#fill in headline">
+        <h3>Trump says low-pressure shower heads won't wash</h3>
+        <p> The US calls for rules to be eased after Donald Trump complained of issues washing his hair.</p>
+      </a>
 
-    <div class="news-card">
-      <img src="placeholder.jpg">
-      <h3>Biden and Haris</h3>
-      <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, similique unde sunt optio quas magnam
-        numquam. Amet reprehenderit aliquid ipsam, odit sit provident impedit. Beatae sequi quidem laborum deleniti
-        blanditiis.</p>
-    </div>
+      <a href="#">
+        <span class="category-tag">US%20&%20CANADA</span>
+      </a>
+    </section>
   </section>
 
   <script src="js/scripts.js"></script>
