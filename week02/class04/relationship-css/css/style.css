@@ -1,0 +1,17 @@
+/* This file is an exercise on relational css instead of using class or ID */
+
+h1{
+    color:purple;
+}
+
+section > h2 {
+    color: blue;
+}
+
+article > h2 {
+    color: red;
+}
+
+section  article  h2 {
+    color: orange;
+}
