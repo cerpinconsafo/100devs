@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>A Basic HTML5 Template</title>
+    <title>Khan Academy</title>
     <meta name="description" content="A simple HTML5 Template for new projects.">
     <meta name="author" content="SitePoint">
 
@@ -32,13 +32,14 @@
             <a href="#">
                 <li>Courses</li>
             </a>
-            <a href="#">
-                <li>Search</li>
-            </a>
+
+            <input type="search" id="site-search" name="q" aria-label="Search through site content">
 
             <!-- DO I make these two seperate navs? With the logo in the middle? Or do I drop a logo in one nav element inbetween the <li>s? -->
             <a href="#">
-                <li>Logo?</li>
+                <li><img src="#khanLogo" alt="Khan Academy Logo">
+
+                </li>
             </a>
             <a href="#">
                 <li>Donate</li>
@@ -52,14 +53,20 @@
 
         </ul>
     </nav>
+
+
     <!-- LANDING PAGE/MAIN CONTENT -->
     <section>
-        <img src="#" alt="landing image">
+
+        <img src="#" alt="Khan Academy landing image">
+
+        <!-- RIGHT TEXT -->
         <section>
-            <!-- RIGHT TEXT -->
             <h1>For every student, every classroom.</h1><span>Real results.</span>
             <p>We're a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
         </section>
+
+        <!-- BUTTONS -->
         <section>
             <button>Learners</button>
             <button>Teachers</button>
@@ -67,7 +74,11 @@
             <button>Parents</button>
         </section>
     </section>
+
+
     <!-- Scrolling Content/Hidden from landing page before scroll -->
+
+
     <script src="js/scripts.js"></script>
 </body>
 
