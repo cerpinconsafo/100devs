@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header,footer {
+    height: 100px;
+    clear: both;
+    
+}
+
+.tri {
+    float: left;
+    height: 200px;
+    width: 33.33%;
+    }
+
+.duo {
+    float: left;
+    height: 300px;
+    width: 50%;
+   
+}
+
+header,footer,.tri,.duo {
+    border: 1px solid grey;
+}
