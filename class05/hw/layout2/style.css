@@ -5,37 +5,28 @@
 
 header,footer {
     height: 100px;
-    clear: both;
-    
+    clear: both;    
 }
 
 #one, #two, #three {
     float: left;
     background: pink;
-
 }
 
-#one {
-    
+#one {    
     height: 200px;
     width: 100%;
     }
 
-#two {
-    
+#two {    
     height: 300px;
-    width:40%;
-   
+    width:40%;   
 }
 
-#three {
-    
+#three {    
     height: 300px;
-    width:60%;
-   
+    width:60%;   
 }
-
-
 
 header,footer,section {
     border: 1px solid grey;

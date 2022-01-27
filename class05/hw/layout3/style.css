@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header,footer {
+    clear: both;
+    height: 100px;    
+}
+
+#one, #two, #three, #four {
+    float: left;
+    height: 500px;
+    background: pink;
+}
+
+#one, #three, #four {    
+    width: 20%;
+}
+
+#two {
+    width: 40%;
+}
+
+header,footer,section {
+    border: 1px solid grey;
+}

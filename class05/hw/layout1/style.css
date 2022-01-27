@@ -5,8 +5,7 @@
 
 header,footer {
     height: 100px;
-    clear: both;
-    
+    clear: both;    
 }
 
 .tri {
@@ -18,8 +17,7 @@ header,footer {
 .duo {
     float: left;
     height: 300px;
-    width: 50%;
-   
+    width: 50%;   
 }
 
 header,footer,.tri,.duo {
