@@ -1,0 +1,131 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 66.28%;
+  margin: 0;
+  height: 900px;
+  color: #21242d;
+}
+header {
+  padding: 1rem;
+  border-bottom: rgb(187, 187, 187) solid 1px;
+  border-top: rgb(187, 187, 187) solid 1px;
+}
+
+nav {
+  font-family:'roboto', sans-serif; 
+  font-weight: 700;
+  font-size: 1.5rem;
+  
+  
+}
+a {
+  text-decoration: none;  
+  color: rgb(37, 164, 238);
+}
+
+ul {
+  padding:0px;
+}
+
+li{ 
+  list-style-type: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav, ul{
+  /* float: left;
+  width: 15%;
+  margin: 0 2%;
+  padding: 10px;
+  list-style: none; */
+  display:flex;
+  justify-content: space-around;
+
+}
+ul{
+  /* float: left;
+  width: 33%; */
+   flex-basis: 30%;
+  
+}
+main > section{
+  width: 50%;
+  height: 600px;
+  float: left;
+}
+/* #khanLogo {
+ 
+  object-fit: contain;
+} */
+#mainImg{
+  width: 90%;
+  height: 100%;
+  object-fit: fill;
+  padding-left:20%;
+}
+
+#realImg {
+  width: 50%;
+  height: 20px;   
+  object-fit:contain;
+  padding-left:0;
+}
+
+.landingSection{
+  margin-top: 150px;
+} 
+
+ h1 {
+   padding-top: 100px;
+   font-family: 'Times New Roman', Times, serif;
+   margin: 0;
+   width: 65%;
+   font-size: 4.5rem;
+   line-height: 5rem;
+ }
+  p{
+    line-height: 3.25rem;
+    font-size: 1.55rem;
+    padding: 20px 0;
+    margin: 20px 0;
+    width: 85%;
+  
+  }
+
+ .button {
+   background-color: dodgerblue;
+   color: white;
+   justify-content: center;
+   margin: 5px;
+   font-size: 1.25rem;
+   padding: 15px 25px;
+   border-radius: 10px;
+ }
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,139 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 66.28%;
+  padding: 20px 20px;
+
+}
+
+nav {
+  font-family:'Source Sans Pro', sans-serif; 
+  font-weight: 300;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;  
+  color: grey;
+}
+
+ul {
+  padding:0px;
+}
+
+li{ 
+  list-style-type: none;
+}
+h1, h2{
+  font-weight: 700;
+}
+
+p, span {
+  color: grey;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav,main,aside{
+  float: left;
+  width: 10%;
+  
+}
+main{
+  width: 50%;
+}
+aside{
+  width: 40%;
+}
+
+nav > ul > li {
+  padding-top: 10px;
+}
+
+ul {
+  margin: 0;
+}
+
+h1, h2, span, p {
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+span.author, span.time {
+  display: block;
+  
+}
+
+.latestSection {
+  width: 33.3333%;
+  float: left;
+  }
+
+  #bottomSection {
+    padding-left: 10%;
+  }
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#join-extra {
+  display: block;
+  color: orange;  
+  font-size: 1.25rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#login{
+font-weight: 700;
+color: rgb(78, 78, 78);  
+font-size: 1.5rem;
+}
+
+ h1 {  
+   font-size: 2.75rem;
+ }
+ h2{
+   font-size: 2rem;
+ }
+
+ h1 + p, section > p {
+   font-weight: 400;
+   font-size: 1.5rem;
+ }
+
+ .author{
+   font-weight: 700;
+   font-size: 1rem;
+   color: black;
+ }
+
+ aside > ul >li {
+   border-top: rgb(187, 187, 187) solid 1px;
+ }
+
+ section > h3 {
+   border-bottom: rgb(187, 187, 187) solid 1px;
+   padding: 15px 0;
+   margin: 0;
+   font-size: 1.15rem;
+ }
