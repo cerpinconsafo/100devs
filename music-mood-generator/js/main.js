@@ -9,49 +9,79 @@ UPDATING THIS TO RUN DIFFERENTLY, BUT COMMITTING THE FIRST ITERATION OF THE PROJ
 //
 //
 //
+
+//globals IKNOW I KNOW WILL REFACTOR
+
+const moodTagline = document.getElementById("moodTagline");
+const embed =  document.getElementById("embed");
+//
+//
+//
+
 //button variables
 
 const phonkBut = document.querySelector('#phonkBut')
-// const chillBut = document.querySelector('#chillBut')
-// const zoneBut = document.querySelector('#zoneBut')
-// const gameBut = document.querySelector('#gameBut')
+const chillBut = document.querySelector('#chillBut')
+const zoneBut = document.querySelector('#zoneBut')
+const gameBut = document.querySelector('#gameBut')
 //
 //
 //
+
 //event listeners
+
 phonkBut.addEventListener('click', phonkVids);
-// chillBut.addEventListener('click', chillVids);
-// zoneBut.addEventListener('click', zoneVids);
-// gameBut.addEventListener('click', gameVids);
+chillBut.addEventListener('click', chillVids);
+zoneBut.addEventListener('click', zoneVids);
+gameBut.addEventListener('click', gameVids);
 //
 //
 //
+
 // functions
 
-function add() {
-    
-    document.getElementById("#addVideoHere").innerHTML += `<iframe id="vid" width="853" height="505"
-    title="YouTube video player" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>`; 
-    
-    
+function removePreviousMoodText() {
+    moodTagline.innerText= "";
 };
 
-function phonkVids() {
-    let url = "https://www.youtube.com/watch?v=Ax4Y5n4f5K8";
-    add();   
-    document.getElementById("#vid").src=url; 
+function phonkVids() {   
+
+    console.log("pressed the Phonk button") 
+    removePreviousMoodText()
+    moodTagline.innerText += 
+    "Yaooooo, Check out this Phonky shiiiii...";   
+
+    let url = "https://www.youtube-nocookie.com/embed/Ax4Y5n4f5K8?&autoplay=1";
+    embed.src=url;   
 };
 
-// function chillVids() {
-   
-// };
+ function chillVids() {
+    console.log("pressed the chill button") 
+    removePreviousMoodText()
+    moodTagline.innerText += 
+    "Straight chillin...MEGA chillin...";   
 
-// function zoneVids() {
-   
-// };
+    let url = "https://www.youtube-nocookie.com/embed/xgirCNccI68?&autoplay=1";
+    embed.src=url;  
+};
 
-// function gameVids() {
-   
-// };
+function zoneVids() {
+    console.log("pressed the zone button") 
+    removePreviousMoodText()
+    moodTagline.innerText += 
+    "On a futuristic dystopian ride through nostlagic voids";   
+
+    let url = "https://www.youtube-nocookie.com/embed/F9L4q-0Pi4E?&autoplay=1";
+    embed.src=url;  
+};
+
+function gameVids() {
+    console.log("pressed the game button") 
+    removePreviousMoodText()
+    moodTagline.innerText += 
+    "Retrgo Gamin', but for your ears";   
+
+    let url = "https://www.youtube-nocookie.com/embed/DJ_wEoW8Qcg?&autoplay=1";
+    embed.src=url;
+};
+
