@@ -6,20 +6,94 @@
 *{
   box-sizing: border-box;
 }
-
+/* Fonts
+Roboto Serif
+DotGothic16
+Gruppo */
 /******************************************
 /* LAYOUT
 /*******************************************/
 
 .hidden{
 	display: none;
+
+  
+}
+.center{
+  display: flex;
+    justify-content: center;
+  }
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
+body {
+  border: solid 60px rgba(36, 4, 87, 0.75);
+  border-radius: 5px;    
+  padding: 0 20px 40px 20px;
+  background: hsla(54, 56%, 66%, 1);
+  background: linear-gradient(90deg, hsla(54, 56%, 66%, 1) 0%, hsla(261, 84%, 45%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(54, 56%, 66%, 1) 0%, hsla(261, 84%, 45%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(54, 56%, 66%, 1) 0%, hsla(261, 84%, 45%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D9CF79", endColorstr="#5612D6", GradientType=1 );
+}
+
+a{
+  color: hsla(54, 56%, 66%, 1);
+  text-decoration: none;
+  padding-right: 10px
+  
+}
+ul {
+  padding: 0;
+}
+ li {  
+   list-style: none;
+ }
+
+ 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
- button {
+ button { 
+   font-family: 'DotGothic16', 'Courier New', Courier, monospace;
    border: solid 2px black;
+   border-radius: 15px;
    padding: 20px;
+   margin-right: 15px;
+ }
+
+ h1, h2 {
+    font-family: 'Gruppo';     
+
+ }
+
+ h1 {
+   font-size: 3rem;
+   margin: 0;
+
+  
+ }
+ h2 {
+  
+  font-size: 2rem;
+ 
+}
+
+
+#embed {
+  border: solid 8px hsla(54, 56%, 66%, 1);
+  border-radius: 10px;
+}
+
+
+ h3, h5, h6 {
+   font-family: 'Roboto Serif', Georgia, 'Times New Roman', Times, serif;
+   margin-top: 0;
+ }
+ footer{
+   padding: 40px;
  }

@@ -79,7 +79,7 @@ function gameVids() {
     console.log("pressed the game button") 
     removePreviousMoodText()
     moodTagline.innerText += 
-    "Retrgo Gamin', but for your ears";   
+    "Retro Gamin', but for your ears";   
 
     let url = "https://www.youtube-nocookie.com/embed/DJ_wEoW8Qcg?&autoplay=1";
     embed.src=url;

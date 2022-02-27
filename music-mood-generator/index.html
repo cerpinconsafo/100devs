@@ -7,38 +7,42 @@
 		content="A funky bunch of curated youtube playlists for interestingly specific and abstract moods ">
 	<meta name="keywords" content="music, youtube, playlist, mood">
 
-	<title>Weird Mood Music Generator</title>
+	<title>Cavi's Mood Music Generator</title>
 
 	<!-- external CSS link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Gruppo&family=Roboto+Serif&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-	<header>
+<body >
+	<header >
 		<nav>
-		<ul><li><a href="http://#" target="_blank" rel="noopener noreferrer">github</a></li>
+		<ul  class="row"><li><a href="http://#" target="_blank" rel="noopener noreferrer">github</a></li>
 			<li><a href="http://#" target="_blank" rel="noopener noreferrer">twitter</a></li>
 			<li><a href="http://#" target="_blank" rel="noopener noreferrer">insta</a></li>		
 		</ul>
 	
 		</nav>
 	</header>
-	<main>
-		<h1>Not-Your-Average-Mood Music Generator</h1>
-		<h3>Choose a mood until you catch the vibe...</h3>
+	<main >
+		<h1 class="center">Mood Music Generator</h1>
+		<h6 class="center"> brought to you by //cavi</h6>
+		<h3 class="center">Choose a mood until you catch the vibe...</h3>
 		<section id="moodList">
-			<ul>
+			<ul  class="row">
 				<li><button id="phonkBut">phonky</button></li>
 				<li><button id="chillBut">mega-chill</button></li>
 				<li><button id="zoneBut">zone me out, drone me out</button></li>
 				<li><button id="gameBut">retro gamin'</button></li>
 		</section>
-
-		<section id="addVideoHere">
-			<h2 id="moodTagline"></h2>
+		<h2 id="moodTagline" class="row"></h2>
+		<section id="addVideoHere" class="center" >
+			
 	<!-- GOING THE DYNAMIC ROUTE TO POPULATE EACH VID THROUGH THE ONCLICK OF THE MOOD BUTTONS, WILL DELETE EVENTUALLY -->
-			<iframe id ="embed" width="853" height="505" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe id ="embed"   width="853" height="505" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 			<!-- <button class="moreButton">More Like This</button> -->
 		</section> 
