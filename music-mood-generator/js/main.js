@@ -24,6 +24,10 @@ const phonkBut = document.querySelector('#phonkBut')
 const chillBut = document.querySelector('#chillBut')
 const zoneBut = document.querySelector('#zoneBut')
 const gameBut = document.querySelector('#gameBut')
+const miamiBut = document.querySelector('#miamiBut')
+const heavyBut = document.querySelector('#heavyBut')
+const mindBut = document.querySelector('#mindBut')
+const fourBut = document.querySelector('#fourBut')
 //
 //
 //
@@ -34,6 +38,10 @@ phonkBut.addEventListener('click', phonkVids);
 chillBut.addEventListener('click', chillVids);
 zoneBut.addEventListener('click', zoneVids);
 gameBut.addEventListener('click', gameVids);
+miamiBut.addEventListener('click', miamiVids);
+heavyBut.addEventListener('click', heavyVids);
+mindBut.addEventListener('click', mindVids);
+fourBut.addEventListener('click', fourVids);
 //
 //
 //
@@ -85,3 +93,39 @@ function gameVids() {
     embed.src=url;
 };
 
+function miamiVids() {
+    console.log("pressed the game button") 
+    removePreviousMoodText()
+    moodTagline.innerText += 
+    "That 'Cruising in a drop down the Miami strip' Vibe";   
+
+    let url = "https://www.youtube-nocookie.com/embed/DJ_wEoW8Qcg?&autoplay=1";
+    embed.src=url;
+};
+function heavyVids() {
+    console.log("pressed the heavyAF button") 
+    removePreviousMoodText()
+    moodTagline.innerText += 
+    "Head Bangin energy";   
+
+    let url = "https://www.youtube-nocookie.com/embed/SZ2WrN93vno?&autoplay=1";
+    embed.src=url;
+};
+function mindVids() {
+    console.log("pressed the mind melt button") 
+    removePreviousMoodText()
+    moodTagline.innerText += 
+    "Expand Your M I N D";   
+
+    let url = "https://www.youtube-nocookie.com/embed/zjJB_dMuEtY?&autoplay=1";
+    embed.src=url;
+};
+function fourVids() {
+    console.log("pressed the four to floor button") 
+    removePreviousMoodText()
+    moodTagline.innerText += 
+    "Get Ready To Move Your Body, BBY!";   
+
+    let url = "https://www.youtube-nocookie.com/embed/bk6Xst6euQk?&autoplay=1";
+    embed.src=url;
+};

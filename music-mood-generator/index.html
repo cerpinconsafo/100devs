@@ -20,35 +20,55 @@
 <body >
 	<header >
 		<nav>
-		<ul  class="row"><li><a href="http://#" target="_blank" rel="noopener noreferrer">github</a></li>
-			<li><a href="http://#" target="_blank" rel="noopener noreferrer">twitter</a></li>
-			<li><a href="http://#" target="_blank" rel="noopener noreferrer">insta</a></li>		
+		<ul  class="row">
+			<li>| &nbsp<a href="https://psdev.netlify.app/" target="_blank" rel="noopener noreferrer">dev &nbsp</a></li>
+			<li>| &nbsp<a href="http://www.patrickskolskyart.com/" target="_blank" rel="noopener noreferrer"> art</a></li>	
+			<li>| &nbsp<a href="https://github.com/cerpinconsafo" target="_blank" rel="noopener noreferrer"> github&nbsp</a></li>
+			<li>| &nbsp<a href="https://twitter.com/cerpinconsafo" target="_blank" rel="noopener noreferrer"> twitter&nbsp</a></li>
+			<li>| &nbsp<a href="http://instagram/pskolsky_art" target="_blank" rel="noopener noreferrer"> insta</a></li>		
+				
+			
 		</ul>
 	
 		</nav>
 	</header>
 	<main >
+		<!-- landing area for user instructions -->
 		<h1 class="center">Mood Music Generator</h1>
 		<h6 class="center"> brought to you by //cavi</h6>
-		<h3 class="center">Choose a mood until you catch the vibe...</h3>
+		<h3 class="center">Choose a mood below until you catch the vibe...</h3>
+
+		<!-- mood buttons -->
 		<section id="moodList">
 			<ul  class="row">
 				<li><button id="phonkBut">phonky</button></li>
 				<li><button id="chillBut">mega-chill</button></li>
 				<li><button id="zoneBut">zone me out, drone me out</button></li>
 				<li><button id="gameBut">retro gamin'</button></li>
-		</section>
+				<!-- this will be some smoothe ass stuff, not sure what -->
+				<li><button id="miamiBut">miami strip cruisin'</button></li>
+				<!-- this will be some either metal or hardcore type stuff -->
+				<li><button id="heavyBut">heavy af</button></li>
+				<!-- this will be flylo/brainfeeder stuff -->
+				<li><button id="mindBut">mind melt</button></li>
+				<!-- house type club-ish flavor -->
+				<li><button id="fourBut">four to the floor bop</button></li>
+		</section><!-- end mood buttons -->
+
+		<!-- where the dynamic tagline for the currently active mood goes -->
 		<h2 id="moodTagline" class="row"></h2>
-		<section id="addVideoHere" class="center" >
-			
-	<!-- GOING THE DYNAMIC ROUTE TO POPULATE EACH VID THROUGH THE ONCLICK OF THE MOOD BUTTONS, WILL DELETE EVENTUALLY -->
+
+		<!-- VIDEO container -->
+		<section id="addVideoHere" class="center" >			
 			<iframe id ="embed"   width="853" height="505" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-			<!-- <button class="moreButton">More Like This</button> -->
+			<!-- I want to add a 'more like this' button that randomly selects another similar video of the current mood via an array/object of each mood
+				<button class="moreButton">More Like This</button> -->
+
 		</section> 
 	</main>
 
-	<footer><h5>DISCLAIMER: I am merely SHARING these wonderful channels/playlists for a little fun experiment. I DO NOT OWN ANY RIGHTS TO THESE YOUTUBE CHANNELS, NOR AM I SPONSORED OR AFFILIATED WITH THEM. Please, if you enjoy the music/art/content, support each respective creator/channel by giving them a visit, a like, or a subscribe. If you are the owner of any of this content and have an issue with me sharing them, please contact me via pskolsky74@gmail.com</h5></footer>
+	<footer><h5>DISCLAIMER: I am merely SHARING these wonderful channels/playlists for a fun, little experiment. I DO NOT OWN ANY RIGHTS TO THESE YOUTUBE CHANNELS, NOR AM I SPONSORED/AFFILIATED WITH THEM. Please, if you enjoy the music/art/content, support each respective creator/channel by giving them a visit, a like, or a subscribe. If you are the owner of any of this content and have an issue with me sharing them, please contact me directly via pskolsky74@gmail.com!</h5></footer>
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
